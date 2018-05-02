@@ -171,10 +171,27 @@ body,html {
 	max-width: 180px;
 	display: none;
 }
-.btn-r i{
-	border-radius: 50%;
-	background-color: #478ECA;
-	padding: 5px;
+.iconmoon-g{
+    color: #fff;
+    background-color: #497beb;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    padding-top: 9px;
+    float: left;
+}
+.iconmoon{
+    color: #fff;
+    background-color: #23557f;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    padding-top: 9px;
+    float: left;
+}
+.btn-r span{
+	top: 19px;
+    position: relative;
 }
 #carbon-copy .content-two h2{
 	text-align: left;
@@ -424,7 +441,7 @@ section {
 	text-align: center;
 }
 .signup form{
-    width: 270px;
+    width: 100%;
     text-align: left;
 }
 .signup form label{
@@ -461,6 +478,33 @@ span {
 	display: none;
 }
 @media (max-width: 766px) {
+	.bg-tittle{
+		background-color: #fff;
+		position: absolute;
+	    top: 0;
+	    height: 100px;
+	    margin-left: -16px;
+	    width: 100%;
+	    text-align: center;
+	}
+	.signup .bg-tittle  h1 {
+	    font-family: GrandHotel, Helvetica, sans-serif;
+	    font-size: 33px !important;
+	    font-weight: 120;
+	    color: #5ed8b1;
+	}
+	.signup .bg-tittle h2 {
+	    color: #478eca;
+	    letter-spacing: 1px;
+	    line-height: 1em;
+	    font-weight: 600;
+	    font-size: 19px;
+	    text-align: center;
+	    font-family: futura-light;
+	}
+	.signup .bg-tittle h3 {
+	    text-align: center;
+	}
 	#questions .box .item h5 {
 	    color: #478ECA;
 	    font-size: 0.9rem;
@@ -676,16 +720,7 @@ span {
 		margin-top: 8px !important;
 		margin-right: 17px;
 	}
-	[class*=icono-] {
-	    display: inline-block;
-	    vertical-align: middle;
-	    position: relative;
-	    font-style: normal;
-	    color: #a7cae0;
-	    text-align: left;
-	    text-indent: -9999px;
-	    direction: ltr;
-	}
+
 	#questions .box {
 		border-bottom: 1px solid #82b4f4;
 	    border-top: 1px solid #82b4f4;
@@ -909,40 +944,48 @@ footer form {
 		bottom: -66px;
 	}
 	.signup{
-		height: 100%;
+		height: 100vh;
 	}
 	.signup .content {
 	    margin: 0 auto;
-	    max-width: 679px;
+	    max-width: 70%;
 		height: 500px;
-    	padding-top: 200px;
+    	padding-top: 80px;
 	}
-	.signup::before{
-		background-image: url('../images/subscribtion-left.png');
-		background-repeat: no-repeat;
-		background-position: right center;
-		content: "";
-		display: inline-block;
-		float: left;
-		padding: 0 190px;
-		position: absolute;
-		left: 0;
-		top: 0;
-		height: 100%;
+	 .signupcloud::after{
+	    background-image: url(../images/subscribtion-right.png);
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: left center;
+	    content: "";
+	    display: inline-block;
+	    float: right;
+	    padding: 0px 150px;
+	    position: absolute;
+	    right: 0;
+	    top: 2px;
+	    height: 99%;
+	    z-index: 0;
+	    overflow: hidden;
+	    animation: float 3s ease-in-out infinite;
 	}
-	.signup::after{
-		background-image: url('../images/subscribtion-right.png');
-		background-repeat: no-repeat;
-		background-position: left center;
-		content: "";
-		display: inline-block;
-		float: right;
-		padding: 0 190px;
-		position: absolute;
-		right: 0;
-		top: 0;
-		height: 100%;
+	 .signupcloud::before{
+	    background-image: url(../images/subscribtion-left.png);
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: right center;
+	    content: "";
+	    display: inline-block;
+	    float: left;
+	    padding: 0 190px;
+	    position: absolute;
+	    left: -10px;
+	    top: 0;
+	    height: 100%;
+	    z-index: 0;
+	    animation: float 3s ease-in-out infinite;
 	}
+	
 	.subscribtion p {
 		line-height: 1.3rem;
 		width: 464px;
@@ -1150,3 +1193,146 @@ transform: translatey(0px);
 }
 }
 
+.signup h1 {
+    font-family: GrandHotel, Helvetica, sans-serif;
+    font-size: 45px !important;
+    font-weight: 120;
+    color: #fff;
+}
+
+.signup  h2 {
+    color: #e3f1f1;
+    letter-spacing: 1.6px;
+    line-height: 1em;
+    font-weight: 600;
+    font-size: 35px;
+    font-family: futura-light;
+}
+.signup h3 {
+    color: #FFFFFF;
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-top: 62px;
+    text-align: ceenter;
+    font-family: futura-light;
+    font-weight: 100;
+}
+
+.signup .col-md-6 form > span {
+    color: #c9dddd;
+    font-size: 16px;
+    font-family: futura-light;
+    margin-left: 18px;
+    /* margin-bottom: 57px; */
+    line-height: 18px;
+}
+
+.signup .col-md-6 .terms{
+    color: #fafafa;
+    font-size: 14px;
+}
+
+.signup .col-md-1 span{
+    color: #fafafa;
+	padding-top: 81px;
+}
+.signup span a{
+    color: #fff;
+}
+
+.signup .btn-r a{
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #205078;
+    display: inline-block;
+    padding: 4px 7px;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: futura-light, Helvetica, sans-serif;
+    margin-top: 10px;
+    min-width: 84%;
+    height: 57px;
+}
+
+.signup {
+  line-height: 0.5;
+  text-align: center;
+}
+.signup .col-md-1 span {
+    display: inline-block;
+    position: relative;
+    margin-top: 110px;
+}
+.signup .col-md-1 span:before,
+.signup .col-md-1 span:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    border-bottom: 2px solid #e3f1f1;
+    top: 0px;
+    width: 126px;
+    transform: rotate(90deg);
+}
+.signup .col-md-1 span:before {
+    left: -50px;
+    margin-right: 35px;
+}
+.signup .col-md-1 span:after {
+ 	left: -65px;
+    margin-left: 15px;
+    margin-top: 166px;
+}
+
+.signup form label {
+    color: #e3f1f1;
+    margin-bottom: 4px;
+    margin-left: 19px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 14px;
+}
+
+.signup form input {
+	border: 0px solid #478ECA;
+    border-radius: 8px;
+    padding: 13px 21px;
+    margin-top: 1px;
+    width: 100%;
+    border-radius: 50px;
+}
+.signup .col-md-6 .btn {
+    border-radius: 30px;
+    background-color: #5ed8b1;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 17px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    width: 100%;
+    margin: 16px 0px;
+    text-align: center;
+    font-family: futura-light, Helvetica, sans-serif;
+}
+
+
+.signup ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #8db5d8;
+    opacity: 1; /* Firefox */
+    font-family: futura-light, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.signup :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #8db5d8;
+    font-family: futura-light, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.signup ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #8db5d8;
+    font-family: futura-light, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
