@@ -1465,7 +1465,7 @@ h3 > ins {
 .input-email {
   border: 1px solid #FFF;
   padding: 10px 15px;
-  color: red;
+  color: #444;
   width: 75%;
   border: 0 none; }
 
@@ -1482,7 +1482,7 @@ label {
 .menu .newsletter form .input-email {
   border: 1px solid #FFF;
   padding: 10px 5px;
-  color: red;
+  color: #444;
   width: 65%;
   border: 0 none; }
 
