@@ -148,17 +148,35 @@ body,html {
 	font-size: 22px;
 	font-family: futura-light, Helvetica, sans-serif;
 }
+.btn-menu i{
+	font-size: 38px;
+
+}
 .btn-menu{
 	background-color: #27DEB8;
     border: 1px solid #27DEB8;
     border-radius: 0px;
-    padding: 6px 12px;
+    padding: 15.7px 22px;
+    width: 82px;
+    height: 87px;
 }
 
+
+#btnClose i{
+	-webkit-text-fill-color: white;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 8px;
+}
+#btnMenu i{
+	-webkit-text-fill-color: white;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 3px;
+}
 .btn-menu span{
 	display: block;
-	color: #FFFFFF;
-	line-height: normal;
+    color: #FFFFFF;
+    line-height: normal;
+    font-size: 14px;
 }
 .btn-green{
 	background-color: #27DEB8;
@@ -174,20 +192,22 @@ body,html {
 .iconmoon-g{
     color: #fff;
     background-color: #497beb;
-    width: 49px;
-    height: 49px;
-    border-radius: 50%;
-    padding-top: 9px;
+	width: 43px;
+    height: 43px;
+    border-radius: 100%;
+    padding-top: 10px;
     float: left;
+    font-size: 23px;
 }
 .iconmoon{
     color: #fff;
     background-color: #23557f;
-    width: 49px;
-    height: 49px;
-    border-radius: 50%;
-    padding-top: 9px;
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+    padding-top: 10px;
     float: left;
+    font-size: 23px;
 }
 .btn-r span{
 	top: 19px;
@@ -268,8 +288,15 @@ h3 strong {
 .learn-more {
 	color: #478ECA;
 }
+.learn-more a{
+	text-decoration: none;
+}
+.learn-more .detailbtn{
+	padding-bottom: 10px;
+}
 .learn-more i{
 	color: #478ECA;
+	font-size: 40px;
 }
 img {
 	width: 100%;
@@ -350,16 +377,89 @@ label{
 	display: block;
 	text-align: left;
 }
-.menu{
-	margin-top: 25px;
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index:99;
+
+.menu .newsletter form label{
+    color: #478ECA;
+    font-family: futura-bold;
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+
+.menu .newsletter form .input-email {
+    border: 1px solid #FFF;
+    padding: 10px 5px;
+    color: red;
+    width: 65%;
+    border: 0 none;
+}
+.menu .newsletter form .btn-submit i {
+	color: #fff;
+	-webkit-text-fill-color: white;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    font-size: 14px;
+}
+.menu .newsletter form .btn-submit {
+    border-radius: 0;
+    background-color: #27deb8;
+    padding: 8px 15px 11px 15px;
+    border: 0;
+    display: inline-block;
+    margin-top: 2px;
+    width: auto;
+    height: 45px;
+}
+
+.menu ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #676767;
+    opacity: 1; /* Firefox */
+    font-family: futura-light, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.menu :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #676767;
+    font-family: futura-light, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#parent{
+    height: 61vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#child{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+    overflow-y: scroll;
+}
+
+.menu ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #676767;
+    font-family: futura-light, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+.menu .newsletter{
+	background-color: #1E4767;
+    height: 125px;
+    padding: 9px 24px;
+    position: absolute;
+    /* height: 100%; */
+    bottom: 0px;
 }
 .menu nav{
-	background-color: #FFFFFF;
-	padding: 10px 20px 20px;
+    background-color: #fcfcfc;
+    padding: 10px 0px 10px;
+    width: 420px;
+    min-height: 100vh;
 }
 .menu nav title{
 	color: #27DEB8;
@@ -367,36 +467,48 @@ label{
 	font-size: 1.5rem;
 	vertical-align: top;
 }
+.menu .show-box2 {
+	right: 20px;
+}
 .menu .show-box{
     text-align: left;
     display: inline-block;
     vertical-align: top;
-    line-height: 4rem;
+    line-height: 2rem;
+    margin-top: 29px;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 .menu ul{
 	list-style-type: none;
 }
 .menu ul li{
-	position: relative;
-	padding: 8px 0 4px;
+    position: relative;
+    padding: 8px 57px;
 }
 .menu ul li::after{
-	border-bottom: 2px solid #27DEB8;
-	content: "";
-	width: 80px;
+	border-bottom: 1px solid #27deb8;
+    content: "";
+    width: 120px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    top: 38px;
+    /* line-height: 33px; */
+    left: 58px;
 }
 .menu ul li a{
-	text-decoration: none;
-	color: #478ECA;
-	white-space: nowrap;
+text-decoration: none;
+    color: #1E4767;
+    white-space: nowrap;
+    font-weight: 100;
+    font-family: futura-light;
+    font-size: 18px;
 }
 .menu ul li.m-box a {
-    color: #FFFFFF;
+	color: #FFFFFF;
     background-color: #27DEB8;
-    padding: 6px;
+    padding: 12px 49px 12px 12px;
 }
 .subscribtion{
 	background-image: url('../images/clouds-eternal-memories.png');
@@ -414,6 +526,13 @@ label{
 	font-family: GrandHotel, Helvetica, sans-serif;
 	font-size: 50px!important;
 	font-weight: 120;
+}
+.titleMenusm{
+    font-family: GrandHotel, Helvetica, sans-serif;
+    font-size: 33px !important;
+    font-weight: 120;
+    margin-top: 25px;
+    margin-left: 9px;
 }
 .titleSub{
 	font-family: futura, Helvetica, sans-serif;
@@ -455,10 +574,10 @@ section {
 	padding: 10px 5px;
 }
 span {
-	color: #478ECA;
+	color: #589fdc;
 }
 .testimonials{
-	background-image: url('../images/bg-testimonials.png');
+	    background: url(../images/bg-testimonials.png) no-repeat;
 
 }
 .testimonials p{
@@ -476,303 +595,6 @@ span {
 
 .img-boundaries .desktop-img{
 	display: none;
-}
-@media (max-width: 766px) {
-	.bg-tittle{
-		background-color: #fff;
-		position: absolute;
-	    top: 0;
-	    height: 100px;
-	    margin-left: -16px;
-	    width: 100%;
-	    text-align: center;
-	}
-	.signup .bg-tittle  h1 {
-	    font-family: GrandHotel, Helvetica, sans-serif;
-	    font-size: 33px !important;
-	    font-weight: 100;
-	    color: #5ed8b1;
-	}
-	.signup .bg-tittle h2 {
-	    color: #478eca;
-	    letter-spacing: 1px;
-	    line-height: 1em;
-	    font-weight: 600;
-	    font-size: 19px;
-	    text-align: center;
-	    font-family: futura-light;
-	}
-	.signup .bg-tittle h3 {
-	    text-align: center;
-	}
-	#questions .box .item h5 {
-	    color: #478ECA;
-	    font-size: 0.9rem;
-	    font-family: futura-light;
-	    font-weight: 100;
-	}
-	#questions .box .item > .right p {
-	    margin-top: 0;
-	    font-size: 16px;
-	    line-height: 21px;
-	}
-
-	footer form a {
-	    border-radius: 0px; 
-	    background-color: #478ECA;
-	    color: #FFFFFF;
-	    display: inline-block;
-	    padding: 12px 30px;
-	    text-decoration: none;
-	    font-family: futura-light, Helvetica, sans-serif;
-	    margin-top: 10px;
-		display: inherit;
-		text-align: center;
-	}
-	footer form label {
-		color: #193f2e;
-    	padding-bottom: 4px;
-	}
-	footer form .input-email {
-	    border: 1px solid #FFF;
-	    padding: 10px 15px;
-	    color: red;
-	    width: 100%;
-	    border: 0 none;
-	}
-	footer form {
-	    text-align: center;
-	    width: 100%;
-	    margin: 0 auto;
-	}
-	footer span {
-	    margin-bottom: 3px;
-	    font-size: 15px;
-	    color: #ffffff;
-	    font-size: 17px;
-	}
-	footer p {
-	    font-size: 19px;
-	    font-weight: 900;
-	    margin-bottom: 3px;
-	    line-height: 21px;
-	    margin-top: 23px;
-	 }
-	.bg-blue h2, .bg-white h2{
-	    font-size: 29px;
-	    text-align: left;
-	}
-	.bg-blue h3 {
-	    color: #FFFFFF;
-	    font-size: 18px;
-	    letter-spacing: 2px;
-	    font-size: 19px;
-	    text-align: left;
-	}
-	#relationship .cnt-right-sub{
-		padding-left: 28px;
-		padding-right: 41px;
-		text-align: left !important;
-	}
-	#about .titleSub {
-	    text-align: center !important;
-	    font-size: 32px !important;
-	}
-	#about  {
-	    padding-top: 0vh;
-	}
-	#about .littleSub{
-	    font-size: 13pt !important;
-	    line-height: 20px;
-	    letter-spacing: 0px;
-	    text-align: left;
-
-	}
-	.testimonials p {
-	    max-width: 98%;
-	    margin: 15px auto;
-	    text-align: center;
-	    color: #1D4766;
-	    line-height: 1rem;
-	}
-	.hiddensm{
-		display: none!important;
-	}
-	.bg-blue p {
-	    color: #FFFFFF;
-	    font-family: futura-light, Helvetica, sans-serif;
-	    font-size: 17px;
-	    line-height: 1rem;
-	}
-	.bg-white .cnt-left p {
-	    font-size: 19px;
-	    color: #878787;
-	    text-align: left;
-	    line-height: 21px;
-	}
-	.bg-white .cnt-left p {
-	    font-size: 16px;
-	    color: #878787;
-	    text-align: left;
-	    line-height: 20px;
-	}
-	#boundaries h2 {
-	    margin-left: 10px;
-	    width: 100%;
-	    margin-bottom: 20px;
-	    letter-spacing: 0.5px;
-	}
-	.boundaries {
-	    bottom: 0;
-	    margin-bottom: 63%;
-	    max-width: 80%;
-	    padding: 10px 30px;
-	    position: absolute;
-	    right: 0;
-	    font-size: 17px;
-	    text-align: justify;
-	}
-	#carbon-copy .cnt-img {
-	    margin-top: -30px;
-	}
-	#safety h2 {
-	    font-size: 25px;
-	    font-family: futura-light, Helvetica, sans-serif;
-	    margin-left: -137px;
-	    text-align: right;
-	    font-weight: 600;
-	}
-	#safety h2 > span {
-	    font-size: 58px;
-	    vertical-align: text-top;
-	    border-bottom: 2px solid #589fdc;
-	    font-family: futura-bold, Helvetica, sans-serif;
-	    font-weight: 900;
-	}
-	#safety .description-little h3 {
-	    width: 100%;
-	    text-align: left;
-	    float: right; 
-	    line-height: 23px;
-		padding-bottom: 0px;
-		font-size: 20px;
-		margin: 7px 0px;
-	}
-	#safety .description-little p {
-	    line-height: 24px;
-	}
-	#pace .circlel {
-	    border: 7px dashed #66a2d2;
-	    border-radius: 50%;
-	    width: 80%;
-	    display: inline-table;
-	    background-size: cover;
-	    padding: 10px 10px;
-	    margin-top: 40px;
-	}
-	#pace .content-two h2 {
-	    font-family: futura-light, Helvetica, sans-serif;
-	    font-weight: 100;
-	    line-height: 0.9;
-	}
-	#pace .bg-blue h2 {
-	    color: #FFFFFF;
-	    letter-spacing: 2px;
-	    font-size: 46px;
-	}
-	#pace .content-two h2 span {
-	    font-family: futura-bold, Helvetica, sans-serif;
-	    font-weight: 900;
-	    color: #ffffff;
-	    font-size: 96px;
-	}
-	#pace .content-two .content{
-	    padding: 17px;
-	    max-width: 640px;
-	    margin: 0 auto;
-	    padding-top: 0vh;
-	    padding-bottom: 0px;
-	    text-align: center;
-	}
-	.subscribtion h3 {
-	    padding-bottom: 5px;
-	    font-size: 22px;
-	    font-weight: 500;
-	    font-family: futura-light;
-	}
-	.subscribtion h2 {
-	    font-size: 29px;
-	    text-align: center !important;
-	    font-weight: 900;
-	    margin-top: -22px;
-	    font-family: futura-bold;
-	}
-	.subscribtion p {
-	    text-align: justify;
-	    line-height: 1.2rem;
-	    margin-left: 20px;
-	    margin-right: 20px;
-	    text-align: center;
-	}
-	footer .imageMail {
-		width: 20% !important;
-		float: left !important;
-		margin-top: 8px !important;
-		margin-right: 17px;
-	}
-
-	#questions .box {
-		border-bottom: 1px solid #82b4f4;
-	    border-top: 1px solid #82b4f4;
-	}
-	#questions .box .item {
-	    border-bottom: 1px solid #82b4f4;
-	}
-	#questions .content {
-	    padding: 0px;
-	    max-width: 766px;
-	    margin: 0 auto;
-	    padding-top: 2vh;
-	    padding-bottom: 0px;
-	}
-	#questions .frecuently {
-	    padding-bottom: 0px; 
-	}
-	#questions .box .item > .right {
-	    float: right;
-	    text-align: justify;
-	    width: 100%;
-	}
-	#questions .accordion {
-	    background-color: #e3f2f5;
-	    color: #488ec9;
-	    cursor: pointer;
-	    padding: 12px;
-	    width: 100%;
-	    text-align: left;
-	    border: none;
-	    outline: none;
-	    transition: 0.4s;
-	    display: inline-flex;
-	}
-
-	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-	#questions .active, .accordion:hover {
-	    background-color: #fff;
-	}
-
-	/* Style the accordion panel. Note: hidden by default */
-	#questions .panel {
-	    padding: 0 45px;
-	    background-color: white;
-	    display: none;
-	    overflow: hidden;
-	}
-
-	#questions .frecuently h4 {
-	    color: #27DEB8;
-    	font-size: 1.2rem;
-	}
 }
 
 footer {
@@ -840,13 +662,14 @@ footer .content{
 }
 
 footer .btn-submit{
-	border-radius: 0;
-	background-color: #FFFFFF;
-	padding: 2px 3px;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    padding: 7px 8px 8px 6px;
     border: 0;
     display: inline-block;
-	margin-top: 0px;
+    margin-top: 2px;
     width: auto;
+    height: 42px;
 }
 
 
@@ -866,9 +689,57 @@ footer form {
     margin-top: 18px;
 }
 @media (min-width: 767px) {
+
+
 	#questions .accordion {
 	    pointer-events: none;
 	}
+	
+	.openMenu #cntOpen {
+		display: block;
+	}
+
+	.openMenu {
+	    margin-top: 0px;
+	    position: fixed;
+	    top: 0;
+	    right: 0px;
+	    z-index: 99;
+	}
+	.closeMenu {
+	    margin-top: 0px;
+	    position: fixed;
+	    top: 0;
+	    right: -420px;
+	    z-index: 100;
+	}
+	.pot{
+	    -webkit-animation-name: run;
+	    -webkit-animation-duration: 1s;
+	}     
+	@-webkit-keyframes run {
+	    0% { right: -420px;}
+	    100%{ right: 0px;}
+	    /*100%{ left: 0;}*/
+	}
+	.potout{
+	    -webkit-animation-name: runing;
+	    -webkit-animation-duration: 1s;
+	}     
+	@-webkit-keyframes runing {
+	    0% { right: 0px;}
+	    100%{ right: -420px;}
+	    /*100%{ left: 0;}*/
+	}
+	
+	.show-box {
+	    position: fixed;
+	    top: -1.8px;
+	    right: 0;
+	    z-index: 98;
+	    margin-top: 41px;
+	}
+
 	footer p{
 		font-size: 24px;
 	    font-weight: 900;
@@ -1213,7 +1084,7 @@ transform: translatey(0px);
     font-size: 23px;
     letter-spacing: 1px;
     margin-top: 62px;
-    text-align: ceenter;
+    text-align: center;
     font-family: futura-light;
     font-weight: 100;
 }
@@ -1249,9 +1120,10 @@ transform: translatey(0px);
     text-decoration: none;
     font-size: 19px;
     font-family: futura-light, Helvetica, sans-serif;
-    margin-top: 10px;
+    margin-top: 8px;
     min-width: 84%;
-    height: 57px;
+    height: 52px;
+ 
 }
 
 .signup {
@@ -1292,6 +1164,11 @@ transform: translatey(0px);
     padding-top: 14px;
 }
 
+.signup {
+    background-color: #478ECA;
+    /*height: 100vh;*/
+}
+
 .signup form input {
 	border: 0px solid #478ECA;
     border-radius: 8px;
@@ -1313,7 +1190,9 @@ transform: translatey(0px);
     text-align: center;
     font-family: futura-light, Helvetica, sans-serif;
 }
-
+.signup .col-md-6 .btn:hover {
+	background-color: #5ed8b1;
+}
 
 .signup ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #8db5d8;
@@ -1336,3 +1215,617 @@ transform: translatey(0px);
     font-weight: 100;
     font-size: 15px;
 }
+
+.signup h3 {
+    line-height: 1em;
+}
+
+@media (max-width: 766px) {
+
+	.signup .content {
+	    max-width: 100%;
+	}
+	.signup .col-md-1 span {
+	    display: inline-block;
+	    position: relative;
+	    margin-top: -30px;
+	}
+	.signup .col-md-1 span:before,
+	.signup .col-md-1 span:after {
+	    content: "";
+	    position: absolute;
+	    height: 1px;
+	    border-bottom: 2px solid #e3f1f1;
+	    top: 0px;
+	    height: -14px;
+	    width: 130px;
+	    transform: rotate(0deg);
+	}
+	.signup .col-md-1 span:before {
+	    left: 50px;
+	    margin-top: 83px;
+	}
+	.signup .col-md-1 span:after {
+		left: -155px;
+		/* margin-left: -75px; */
+		margin-top: 84px;
+	}
+
+	.signup h3 {
+	    font-size: 22px;
+	    line-height: 1em;
+	    font-weight: 100;
+	}
+	.signup .btn-r a{
+		width: 92%;
+	}
+	.content-third .bg {
+	    background: url(../images/clouds-eternal-memories.png) -140px 457px no-repeat;
+	}
+	.menu  {
+	    background-color: #fcfcfc;
+	    padding: 0px; 
+	    width: 100%;
+	    min-height: 100vh;
+	    position: fixed;
+	    top: 0;
+	    z-index: 98;
+	}
+	.togglefooter{
+		width: 57px;
+	    position: relative;
+	    top: -15px;
+	    left: 42%;
+	    margin-bottom: -40px;
+	    z-index: 130;
+	    background-color: #5dd8b0;
+	    padding: 10px;
+	    text-align: center;
+	    border-radius: 50%;
+	}
+	#about .btn {
+	    font-size: 20px;
+	}
+	#relationship  h2 {
+	    font-size: 23px;
+	}
+	.closeMenu {
+	    margin-top: 0px;
+	    position: fixed;
+	    top: 100%;
+	    z-index: 96;
+	}
+
+	#carbon-copy .description h3 > ins {
+	    border-bottom: 2px solid #27DEB8;
+	    text-decoration: none;
+	    padding-bottom: 1px;
+	}
+	#carbon-copy .description h3:after  {
+	    border-bottom: 2px solid #27DEB8;
+	    width: 30px;
+	    text-decoration: none;
+	    padding-bottom: 5px;
+	}
+	#questions .ti-menu{
+		padding-top: 6px;
+    	margin-right: 4px;
+    	margin-left: 1px;
+	}
+	.pot{
+	    -webkit-animation-name: run;
+	    -webkit-animation-duration: 1s;
+	}     
+	@-webkit-keyframes run {
+	    0% { top: -100%;}
+	    100%{ top: 0px;}
+	    /*100%{ left: 0;}*/
+	}
+	.potout{
+	    -webkit-animation-name: runing;
+	    -webkit-animation-duration: 1s;
+	}     
+	@-webkit-keyframes runing {
+	    0% { top: 0px;}
+	    100%{ top: -100%;}
+	    /*100%{ left: 0;}*/
+	}
+	#cntOpen  title {
+	    color: #ffffff !important;
+	    font-size: 33px;
+	}
+	#cntOpen{
+		display: block;
+	    position: fixed;
+	    z-index: 100;
+	    /*background: #27deb8;*/
+    	height: 91px;
+    	width: 100%;
+   		z-index: 100;
+	}
+	#child {
+	    position: absolute;
+	    top: 80px;
+	    bottom: 0;
+	    left: -50px;
+	    right: -17px;
+	    overflow-y: scroll;
+	}
+	#parent {
+	    height: 81vh;
+	    width: 100%;
+	    overflow: hidden;
+	    position: relative;
+	}
+	.menu .newsletter form .input-email {
+	    padding: 4px 5px;
+	}
+	.menu nav title {
+	    color: #ffffff !important;
+	    font-size: 33px;
+	}
+	.menu .show-box {
+	    margin-top: -1px;
+	    background-color: #27deb8;
+	    color: #fff !important;
+	    width: 100%;
+	    position: fixed;
+	    top: 0px;
+	    z-index: 222;
+	}
+
+	.menu nav title {
+	    color: #27DEB8;
+	    display: inline-block;
+	    font-size: 1.5rem;
+	    vertical-align: top;
+	}
+
+	.menu nav {
+    	/*background-color: #fcfcfc;*/
+    	 padding: 0px; 
+	}
+	.menu .newsletter {
+	    background-color: #1E4767;
+	    /* height: 125px; */
+	    padding: 9px 24px;
+	    position: absolute;
+	    height: 147px;
+	    bottom: 0px;
+	    width: 100%;
+	}
+	.menu .newsletter form a {
+	    border-radius: 0px;
+	    background-color: #27deb8;
+	    color: #FFFFFF;
+	    display: inline-block;
+	    padding: 7px 30px;
+	    text-decoration: none;
+	    font-family: futura-light, Helvetica, sans-serif;
+	    margin-top: 10px;
+	    display: inherit;
+	    text-align: center;
+
+	}
+	#about {
+	    padding-top: 16vh;
+	}
+	.bg-tittle{
+		background-color: #fff;
+		position: absolute;
+	    top: 0;
+	    height: 100px;
+	    margin-left: -16px;
+	    width: 100%;
+	    text-align: center;
+	}
+	.signup .bg-tittle  h1 {
+	    font-family: GrandHotel, Helvetica, sans-serif;
+	    font-size: 33px !important;
+	    font-weight: 100;
+	    color: #5ed8b1;
+	}
+	.signup .bg-tittle h2 {
+	    color: #478eca;
+	    letter-spacing: 1px;
+	    line-height: 1em;
+	    font-weight: 600;
+	    font-size: 19px;
+	    text-align: center;
+	    font-family: futura-light;
+	}
+	.signup .bg-tittle h3 {
+	    text-align: center;
+	}
+	#questions .box .item h5 {
+	    color: #478ECA;
+	    font-size: 0.9rem;
+	    font-family: futura-light;
+	    font-weight: 100;
+	}
+	#questions .box .item > .right p {
+	    margin-top: 0;
+	    font-size: 16px;
+	    line-height: 21px;
+	    color: #504e4e;
+	}
+
+	footer {
+		position: fixed;
+    	bottom: -147px;
+    	width: 100%;
+	}
+	.hiddenfooter {
+		display: none;
+	}
+	.showfooter {
+		display: block;
+	}
+	footer form a {
+	    border-radius: 0px; 
+	    background-color: #478ECA;
+	    color: #FFFFFF;
+	    display: inline-block;
+	    padding: 12px 30px;
+	    text-decoration: none;
+	    font-family: futura-light, Helvetica, sans-serif;
+	    margin-top: 10px;
+		display: inherit;
+		text-align: center;
+	}
+	footer form label {
+		color: #397359;
+    	padding-bottom: 4px;
+	}
+	#questions{
+		margin-bottom: 94px;
+	}
+	footer form .input-email {
+	    border: 1px solid #FFF;
+	    padding: 10px 15px;
+	    color: 736767;
+	    width: 100%;
+	    border: 0 none;
+	}
+	footer form {
+	    text-align: center;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	footer span {
+		margin-bottom: 3px;
+	    font-size: 15px;
+	    color: #ffffff;
+	    font-size: 13px;
+	    font-family: futura-light;
+	    margin-left: 0%;
+	    width: 100%;
+	    text-align: center;
+	}
+	footer p {
+		font-size: 17px;
+	    font-weight: 900;
+	    margin-bottom: 3px;
+	    line-height: 13px;
+	    margin-top: 2em;
+	    text-align: center;
+	 }
+	.bg-blue h2, .bg-white h2{
+	    font-size: 27px;
+	    text-align: left;
+	}
+	.bg-blue h3 {
+	    color: #FFFFFF;
+	    font-size: 18px;
+	    letter-spacing: 2px;
+	    font-size: 16px;
+	    text-align: left;
+	}
+	#carbon-copy h3{
+		padding-bottom: 5px;
+		font-size: 16px;
+	}
+	#relationship .cnt-right-sub{
+		padding-left: 28px;
+		padding-right: 41px;
+		text-align: left !important;
+	}
+	#about .titleSub {
+	    text-align: center !important;
+	    font-size: 29px !important;
+	}
+	#about  {
+	    padding-top: 0vh;
+	}
+	#about .littleSub{
+	    font-size: 13pt !important;
+	    line-height: 20px;
+	    letter-spacing: 0px;
+	    text-align: left;
+
+	}
+	.testimonials p {
+	    max-width: 98%;
+	    margin: 15px auto;
+	    text-align: center;
+	    color: #1D4766;
+	    line-height: 1rem;
+	}
+	.hiddensm{
+		display: none!important;
+	}
+	.bg-blue p {
+	    color: #FFFFFF;
+	    font-family: futura-light, Helvetica, sans-serif;
+	    font-size: 19px;
+	    line-height: 1rem;
+	    text-align: left;
+	}
+	#album p {
+	    text-align: center;
+	}
+	.bg-white .cnt-left p {
+	    font-size: 19px;
+	    color: #878787;
+	    text-align: left;
+	    line-height: 21px;
+	}
+	.bg-white .cnt-left p {
+	    font-size: 16px;
+	    color: #878787;
+	    text-align: left;
+	    line-height: 20px;
+	}
+	#boundaries h2 {
+	    margin-left: 10px;
+	    width: 100%;
+	    margin-bottom: 20px;
+	    letter-spacing: 0.5px;
+	}
+	.boundaries {
+	    bottom: 0;
+	    margin-bottom: 63%;
+	    max-width: 80%;
+	    padding: 10px 30px;
+	    position: absolute;
+	    right: 0;
+	    font-size: 17px;
+	    text-align: justify;
+	}
+	#carbon-copy .cnt-img {
+	    margin-top: -30px;
+	}
+	#safety h2 {
+	    font-size: 24px;
+	    font-family: futura-light, Helvetica, sans-serif;
+	    margin-left: -137px;
+	    text-align: right;
+	    font-weight: 600;
+	}
+	.lineshort{
+		width: 100px;
+	    text-align: center;
+	    border-bottom: 2px solid #27deb8;
+	    margin-left: 33%;
+	    margin-top: -12px;
+	    margin-bottom: 42px;
+	}
+	#pace h2{
+		font-size: 45px;
+    	text-align: center;
+	}
+	#pace h2:after {
+		border-bottom: 1px solid #27DEB8;
+	}
+	#pace h2 > ins {
+	    border-bottom: 0px solid #27DEB8;
+	    text-decoration: none;
+	    padding-bottom: 11px;
+	}
+	#safety h2 > span {
+	    font-size: 51px;
+	    vertical-align: text-top;
+	    border-bottom: 2px solid #589fdc;
+	    font-family: futura-bold, Helvetica, sans-serif;
+	    font-weight: 700;
+	}
+	#safety .description-little h3 {
+	    width: 100%;
+	    text-align: left;
+	    float: right; 
+	    line-height: 23px;
+		padding-bottom: 0px;
+		font-size: 20px;
+		margin: 7px 0px;
+	}
+	#safety .description-little p {
+		text-align: left;
+    	color: #585058;
+	    line-height: 24px;
+	}
+	#pace .circlel {
+	    border: 7px dashed #66a2d2;
+	    border-radius: 50%;
+	    width: 80%;
+	    display: inline-table;
+	    background-size: cover;
+	    padding: 10px 10px;
+	    margin-top: 40px;
+	}
+	#pace .content-two h2 {
+	    font-family: futura-light, Helvetica, sans-serif;
+	    font-weight: 100;
+	    line-height: 0.9;
+	}
+	#pace .bg-blue h2 {
+	    color: #FFFFFF;
+	    letter-spacing: 2px;
+	    font-size: 46px;
+	}
+	#pace .content-two h2 span {
+	    font-family: futura-bold, Helvetica, sans-serif;
+	    font-weight: 900;
+	    color: #ffffff;
+	    font-size: 96px;
+	}
+	#pace .content-two .content{
+	    padding: 17px;
+	    max-width: 640px;
+	    margin: 0 auto;
+	    padding-top: 0vh;
+	    padding-bottom: 0px;
+	    text-align: center;
+	}
+	.subscribtion h3 {
+	    padding-bottom: 5px;
+	    font-size: 22px;
+	    font-weight: 500;
+	    font-family: futura-light;
+	}
+	.subscribtion h2 {
+	    font-size: 29px;
+	    text-align: center !important;
+	    font-weight: 900;
+	    margin-top: -22px;
+	    font-family: futura-bold;
+	}
+	.subscribtion p {
+	    text-align: justify;
+	    line-height: 1.2rem;
+	    margin-left: 20px;
+	    margin-right: 20px;
+	    text-align: center;
+	    color: #5d5858;
+	}
+	footer .imageMail {
+		width: 20% !important;
+		float: left !important;
+		margin-top: 8px !important;
+		margin-right: 17px;
+	}
+
+	#questions .box {
+		border-bottom: 1px solid #82b4f4;
+	    border-top: 1px solid #82b4f4;
+	}
+	#questions .box .item {
+	    border-bottom: 1px solid #82b4f4;
+	}
+	#questions .content {
+	    padding: 0px;
+	    max-width: 766px;
+	    margin: 0 auto;
+	    padding-top: 2vh;
+	    padding-bottom: 0px;
+	}
+	#questions .frecuently {
+	    padding-bottom: 0px; 
+	}
+	#questions .box .item > .right {
+	    float: right;
+	    text-align: justify;
+	    width: 100%;
+	}
+	#questions .accordion {
+	    background-color: #e3f2f5;
+	    color: #488ec9;
+	    cursor: pointer;
+	    padding: 12px;
+	    width: 100%;
+	    text-align: left;
+	    border: none;
+	    outline: none;
+	    transition: 0.4s;
+	    display: inline-flex;
+	}
+
+	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+	#questions .active, .accordion:hover {
+	    background-color: #fff;
+	}
+
+	/* Style the accordion panel. Note: hidden by default */
+	#questions .panel {
+	    padding: 0 45px;
+	    background-color: white;
+	    display: none;
+	    overflow: hidden;
+	}
+
+	#questions .frecuently h4 {
+	    color: #27DEB8;
+    	font-size: 0.9rem;
+	}
+	#questions ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	    color: #ddd;
+	    opacity: 1; /* Firefox */
+	    font-family: futura-light, Helvetica, sans-serif;
+	    font-weight: 100;
+	    font-size: 15px;
+	}
+
+	#questions :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	    color: #ddd;
+	    font-family: futura-light, Helvetica, sans-serif;
+	    font-weight: 100;
+	    font-size: 15px;
+	}
+
+	#questions ::-ms-input-placeholder { /* Microsoft Edge */
+	    color: #ddd;
+	    font-family: futura-light, Helvetica, sans-serif;
+	    font-weight: 100;
+	    font-size: 15px;
+	}
+}
+
+@media (max-width: 377px) {
+
+	footer p {
+	    font-size: 14px;
+	    font-weight: 900;
+	    margin-bottom: 37px;
+	    line-height: 4px;
+	    margin-top: 2em;
+	    text-align: center;
+	}
+	#safety h2 {
+	    font-size: 24px;
+	    font-family: futura-light, Helvetica, sans-serif;
+	    margin-left: 3px;
+	    text-align: left;
+	    font-weight: 600;
+	    width: 70%;
+	}
+	.boundaries {
+	    bottom: 0;
+	    margin-bottom: 76%;
+	    max-width: 99%;
+	    padding: 10px 30px;
+	    position: absolute;
+	    right: 0;
+	    font-size: 16px;
+	    text-align: justify;
+	}
+	.content-blue  h2 > ins {
+	    border-bottom: 0px solid #27DEB8 !important;
+	    text-decoration: none;
+	    padding-bottom: 11px;
+	    font-size: 29px;
+	}
+	.bg-blue h3,.bg-white h3 {
+	    letter-spacing: 1px;
+	}
+	.titleMenusm {
+	    font-size: 27px !important;
+	}
+	.lineshort {
+	    margin-left: 0;
+	}
+	#carbon-copy .description h3 > ins {
+	    border-bottom: 0px solid #27DEB8;
+	    text-decoration: none;
+	    padding-bottom: 1px;
+	}
+}
+
