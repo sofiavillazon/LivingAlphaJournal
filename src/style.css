@@ -1587,7 +1587,7 @@ label {
 
 .menu ul li {
   position: relative;
-  padding: 8px 57px; }
+  padding: 7px 57px; }
 
 .menu ul li::after {
   border-bottom: 1px solid #27deb8;
@@ -1612,6 +1612,15 @@ label {
   color: #FFFFFF;
   background-color: #27DEB8;
   padding: 12px 49px 12px 12px; }
+
+.menu ul li.m-box2 a {
+  color: #FFFFFF;
+  background-color: #1e4767;
+  padding: 8px 57px;
+  width: 330px;
+  border-bottom: none !important;
+  padding: 8px 57px;
+  width: 330px; }
 
 .subscribtion {
   background-image: url("../images/clouds-eternal-memories.png");
