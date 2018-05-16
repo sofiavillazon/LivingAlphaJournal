@@ -54,7 +54,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
- $(window).on("scroll",endPage)
+$(window).on("scroll",endPage)
 
 function endPage(){
  if($(document).height() - $(window).scrollTop() - $(window).height() < 20) {

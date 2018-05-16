@@ -32,15 +32,17 @@ a{
 }
 .bg-blue {
 	background-color: #478ECA;
+	overflow: overlay;
 }
+
 .bg-white {
 	background-color: #FFFFFF;
 	position: relative;
 }
 .bg-blue h2 {
 	color: #FFFFFF;
-	letter-spacing: 2px;
-	font-size: 46px;
+	letter-spacing: 1px;
+	font-size: 43px;
 }
 .bg-blue h3 {
 	color: #FFFFFF;
@@ -690,7 +692,16 @@ footer form {
     width: 100%;
     margin-top: 18px;
 }
-@media (min-width: 767px) {
+@media (min-width: 788px) {
+
+	.login{
+		margin-top: -24px;
+	}
+
+	.loading .bg-blue {
+		background-color: #478ECA;
+		overflow: initial;
+	}
 
 
 	#questions .accordion {
@@ -1085,7 +1096,7 @@ transform: translatey(0px);
     color: #FFFFFF;
     font-size: 23px;
     letter-spacing: 1px;
-    margin-top: 62px;
+    margin-top: 2px;
     text-align: center;
     font-family: futura-light;
     font-weight: 100;
@@ -1180,6 +1191,25 @@ transform: translatey(0px);
     border-radius: 50px;
 }
 
+.signup .login .btn {
+    /* padding: 16px 30px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #5ed8b1;
+    color: #FFFFFF;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    /* width: 70%; */
+    margin: 16px 0px;
+    text-align: center;
+    font-family: futura-light, Helvetica, sans-serif;
+}
+.signup .login .btn:hover {
+	background-color: #4bcca1;
+}
+
 .signup .col-md-6 .btn {
 	padding: 16px 30px; 
     border: none; 
@@ -1195,6 +1225,7 @@ transform: translatey(0px);
     text-align: center;
     font-family: futura-light, Helvetica, sans-serif;
 }
+
 .signup .col-md-6 .btn:hover {
 	background-color: #4bcca1;
 }
@@ -1233,11 +1264,16 @@ transform: translatey(0px);
     line-height: 1em;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 788px) {
 
+
+	.login{
+		margin-top: 60px;
+	}
 
 	.signup .content {
 	    max-width: 100%;
+
 	}
 	.signup .col-md-1 span {
 	    display: inline-block;
@@ -1528,13 +1564,22 @@ transform: translatey(0px);
 	    font-size: 27px;
 	    text-align: left;
 	}
-	.bg-blue h3 {
+	.signup .bg-blue h3 {
 	    color: #FFFFFF;
 	    font-size: 18px;
 	    letter-spacing: 2px;
 	    font-size: 16px;
 	    text-align: center;
 	}
+	.loading .bg-blue h3 {
+	    color: #FFFFFF;
+	    font-size: 18px;
+	    letter-spacing: 2px;
+	    font-size: 16px;
+	    text-align: left;
+	}
+
+
 	#carbon-copy h3{
 		padding-bottom: 5px;
 		font-size: 16px;
@@ -1598,7 +1643,7 @@ transform: translatey(0px);
 	}
 	.boundaries {
 	    bottom: 0;
-	    margin-bottom: 63%;
+	    margin-bottom: 73%;
 	    max-width: 80%;
 	    padding: 10px 30px;
 	    position: absolute;
@@ -1827,7 +1872,7 @@ transform: translatey(0px);
 	    padding-bottom: 11px;
 	    font-size: 29px;
 	}
-	.bg-blue h3,.bg-white h3 {
+	.bg-blue h3, .bg-white h3 {
 	    letter-spacing: 1px;
 	}
 	.titleMenusm {
