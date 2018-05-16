@@ -2179,11 +2179,13 @@ footer form {
   border-radius: 50px; }
 
 .signup .col-md-6 .btn {
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
   border-radius: 30px;
   background-color: #5ed8b1;
   color: #FFFFFF;
   display: inline-block;
-  padding: 17px 30px;
   text-decoration: none;
   font-size: 22px;
   width: 100%;
@@ -2192,7 +2194,10 @@ footer form {
   font-family: futura-light, Helvetica, sans-serif; }
 
 .signup .col-md-6 .btn:hover {
-  background-color: #5ed8b1; }
+  background-color: #4bcca1; }
+
+.signup .col-md-5 .btn:hover {
+  background-color: #f1f1f1; }
 
 .signup ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -2209,6 +2214,9 @@ footer form {
   font-family: futura-light, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 15px; }
+
+.signup button:focus, .signup textarea:focus, input:focus {
+  outline: none; }
 
 .signup ::-ms-input-placeholder {
   /* Microsoft Edge */
@@ -2467,7 +2475,7 @@ footer form {
     font-size: 18px;
     letter-spacing: 2px;
     font-size: 16px;
-    text-align: left; }
+    text-align: center; }
   #carbon-copy h3 {
     padding-bottom: 5px;
     font-size: 16px; }
