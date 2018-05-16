@@ -34,7 +34,13 @@ a{
 	background-color: #478ECA;
 	overflow: overlay;
 }
+#heightlogin{
+	height: 100vh;
+}
 
+#heightlogin form {
+    margin-top: 47px;
+}
 .bg-white {
 	background-color: #FFFFFF;
 	position: relative;
@@ -1202,7 +1208,7 @@ transform: translatey(0px);
     text-decoration: none;
     font-size: 20px;
     /* width: 70%; */
-    margin: 16px 0px;
+    margin: 21px 0px;
     text-align: center;
     font-family: futura-light, Helvetica, sans-serif;
 }
