@@ -1261,6 +1261,17 @@ body, html {
   font-size: 22px;
   font-family: futura-light, Helvetica, sans-serif; }
 
+.btn2 {
+  border-radius: 30px;
+  background-color: #27deb8;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 9px 32px;
+  text-decoration: none;
+  font-size: 21px;
+  margin: 7px;
+  font-family: futura-light, Helvetica, sans-serif; }
+
 .btn-menu i {
   font-size: 38px; }
 
@@ -2432,7 +2443,8 @@ footer form {
     height: 100px;
     margin-left: -16px;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
   .signup .bg-tittle h1 {
     font-family: GrandHotel, Helvetica, sans-serif;
     font-size: 33px !important;
