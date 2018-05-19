@@ -1148,7 +1148,7 @@ a {
   height: 100vh; }
 
 #heightlogin form {
-  margin-top: 47px; }
+  margin-top: 35px; }
 
 .bg-white {
   background-color: #FFFFFF;
@@ -2243,6 +2243,14 @@ footer form {
   text-align: center;
   font-family: futura-light, Helvetica, sans-serif; }
 
+.signup .col-md-6 .btn3 {
+  margin-top: 20px;
+  /*border-top: 2px solid #eee;*/ }
+
+.facebooklogin {
+  border-bottom: 1px solid #306c9c;
+  padding-bottom: 15px; }
+
 .signup .col-md-6 .btn:hover {
   background-color: #4bcca1; }
 
@@ -2279,6 +2287,8 @@ footer form {
   line-height: 1em; }
 
 @media (max-width: 788px) {
+  .facebooklogin {
+    margin-top: 35px; }
   .login {
     margin-top: 60px; }
   .signup .content {
